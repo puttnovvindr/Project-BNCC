@@ -4,34 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="index-2.css">
 </head>
 <body>
     <div class="container-1">
-        <img src="instagram.svg" id="ig"><br>
-        <input type="text" id="email" placeholder="Phone number, username, or email"><br>
-        <input type="password" id="password" placeholder="Password"><br>
-        <button id="login" onclick="login()">Log in</button>
+        <img src="instagram.svg" id="ig">
+        <p id="p-1">Sign Up to see photos and videos</p><br>
+        <p id="p-2">from your friends.</p>
+        <button id="login">
+            <p><img src="facebook-2.svg" id="fb"> <a id="p-0" href="https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1" class="">Log in with Facebook</a></p>
+        </button>
         <img src="Vector.svg" id="v-1">
-        <p id="p1">OR</p><br>
-        <img src="facebook.svg" id="fb">
-        <a href="https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1" id="a1">Log in with Facebook</a><br>
-        <a href="#" id="a2">Forgot password?</a><br><br>
+        <p id="p-3">OR</p>
+        <input type="text" id="email" placeholder="Mobile Number or Email"><br>
+        <input type="text" id="name" placeholder="Full Name"><br>
+        <input type="text" id="username" placeholder="Username"><br>
+        <input type="password" id="password" placeholder="Password">
+        <p id="p-4">People who use our service may have uploaded</p><br>
+        <p id="p-5">your contact information to Instagram. <a href="#" id="a-1">Learn<br>More</a></p><br>
+        <p id="p-6">By signing up, you agree to our <a href="#" id="a-2">Terms</a> , <a href="#" id="a-3">Privacy</a></p><br>
+        <p id="p-7"><a href="#" id="a-4">Policy</a> and <a href="#" id="a-5">Cookies Policy</a> .</p><br>
+        <button id="signup" onclick="signup()">Sign up</button>
     </div>
 
     <div class="container-2">
-        <p id="p4">Don't have an account? <a href="index-2.html" id="a3">Sign Up</a></p><br>
+        <p id="p-8">Have an account? <a href="index.html" id="a-6">Log in</a></p><br>
     </div>
     <div class="container-3">
-        <p id="p5">Get the app.</p>
-        <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank">
+        <p id="p-9">Get the app.</p><br>
+        <a href="#">
             <img src="g-1.svg" id="g-1">
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DE0DAC87B-C97E-4204-9E15-16A65903DF75%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank">
+        <a href="#">
             <img src="g-2.svg" id="g-2">
         </a>
-       
     </div>
     <div class="container-4">
         <a href="https://about.meta.com/" target="_blank" class="link" id="u-1">Meta</a>
@@ -49,20 +56,23 @@
         <img src="icon.svg" id="icon">
         <p id="p6">2023 Instagram from Meta</p>
     </div>
-    
+
     <script>
-        function login(){
+        function signup(){
             var username = document.getElementById("email").value;
+            var name = document.getElementById("name").value;
+            var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
-            if(email == "" || password == ""){
-                alert("Sorry, your email or password was incorrect. Please double-check your email or password.")
+            if(email == "" || name == "" || username == "" || password == ""){
+                alert("Sorry, you must fill out the form correctly.")
             }
             else{
-                alert("Login has been successful.")
+                alert("Sign up has been successful.")
             }
         }
     </script>
+
 
 </body>
 </html>
