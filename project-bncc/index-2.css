@@ -67,12 +67,13 @@ body{
     background-color: #4DB0FE;
 }
 
+#login:hover{
+    background-color: #0869FB;
+}
+
 #p-0{
     color: #FFF;
     text-decoration: none;
-}
-#login:hover{
-    background-color: #0869FB;
 }
 
 #v-1{
@@ -150,6 +151,10 @@ body{
     background-color: #4DB0FE;
 }
 
+#signup:hover{
+    background-color: #0869FB;
+}
+
 .container-2{
     box-sizing: border-box;
     width: 350px;
@@ -170,6 +175,7 @@ body{
 
 #a-6{
     text-decoration: none;
+    color: #4DB0FE;
 }
 
 .container-3{
@@ -254,6 +260,3 @@ body{
     color: #636262;
     padding-left: 20px;
 }
-
-
-
