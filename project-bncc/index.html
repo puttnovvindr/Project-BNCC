@@ -12,15 +12,16 @@
         <img src="instagram.svg" id="ig"><br>
         <input type="text" id="email" placeholder="Phone number, username, or email"><br>
         <input type="password" id="password" placeholder="Password"><br>
-        <button id="login">Log in</button>
+        <button id="login" onclick="login()">Log in</button>
         <img src="Vector.svg" id="v-1">
         <p id="p1">OR</p><br>
         <img src="facebook.svg" id="fb">
-        <a href="#" id="a1">Log in with Facebook</a><br>
-        <a href="#" id="a2">Forgot password?</a><br>
+        <a href="https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1" id="a1">Log in with Facebook</a><br>
+        <a href="#" id="a2">Forgot password?</a><br><br>
     </div>
+
     <div class="container-2">
-        <p id="p4">Don't have an account? <a href="" id="a3">Sign Up</a></p><br>
+        <p id="p4">Don't have an account? <a href="index-2.html" id="a3">Sign Up</a></p><br>
     </div>
     <div class="container-3">
         <p id="p5">Get the app.</p>
@@ -49,5 +50,19 @@
         <p id="p6">2023 Instagram from Meta</p>
     </div>
     
+    <script>
+        function login(){
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if(email == "" || password == ""){
+                alert("Sorry, your email or password was incorrect. Please double-check your email or password.")
+            }
+            else{
+                alert("Login has been successful.")
+            }
+        }
+    </script>
+
 </body>
 </html>
